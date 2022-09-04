@@ -13,6 +13,10 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        mainView.likeAction = { [weak self ] in
+            guard let strongSelf = self else { return }
+            strongSelf.mainView.contentView.backgroundColor = UIColor.red.withAlphaComponent(0.5)
+        }
         // Do any additional setup after loading the view.
     }
     
@@ -29,11 +33,13 @@ class MainViewController: UIViewController {
 }
 
 class MainView: UIView {
+    var likeAction: (() -> Void)?
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = .white
         setupViews()
         setupConstraints()
+        addActions()
     }
     
     required init?(coder: NSCoder) {
@@ -71,6 +77,14 @@ class MainView: UIView {
         //Like button
         setupLikeButtonConstraints()
         
+    }
+    
+    func addActions() {
+        likeButton.addTarget(self, action: #selector(self.onLikeButton), for: .touchUpInside)
+    }
+    
+    @objc func onLikeButton() {
+        likeAction?()
     }
     
     // create the first view
