@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C494A32C28C48E96001635C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C494A32B28C48E96001635C1 /* AppDelegate.swift */; };
-		C494A33028C48E96001635C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C494A32F28C48E96001635C1 /* ViewController.swift */; };
+		C494A33028C48E96001635C1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C494A32F28C48E96001635C1 /* MainViewController.swift */; };
 		C494A33628C48E96001635C1 /* ios_uikit_playground.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C494A33428C48E96001635C1 /* ios_uikit_playground.xcdatamodeld */; };
 		C494A33828C48E99001635C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C494A33728C48E99001635C1 /* Assets.xcassets */; };
 		C494A33B28C48E99001635C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C494A33928C48E99001635C1 /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		C494A32828C48E96001635C1 /* ios-uikit-playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-uikit-playground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C494A32B28C48E96001635C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C494A32F28C48E96001635C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C494A32F28C48E96001635C1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C494A33528C48E96001635C1 /* ios_uikit_playground.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ios_uikit_playground.xcdatamodel; sourceTree = "<group>"; };
 		C494A33728C48E99001635C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C494A33A28C48E99001635C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				C494A32B28C48E96001635C1 /* AppDelegate.swift */,
-				C494A32F28C48E96001635C1 /* ViewController.swift */,
+				C494A32F28C48E96001635C1 /* MainViewController.swift */,
 				C494A33728C48E99001635C1 /* Assets.xcassets */,
 				C494A33928C48E99001635C1 /* LaunchScreen.storyboard */,
 				C494A33C28C48E99001635C1 /* Info.plist */,
@@ -134,7 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C494A33028C48E96001635C1 /* ViewController.swift in Sources */,
+				C494A33028C48E96001635C1 /* MainViewController.swift in Sources */,
 				C494A32C28C48E96001635C1 /* AppDelegate.swift in Sources */,
 				C494A33628C48E96001635C1 /* ios_uikit_playground.xcdatamodeld in Sources */,
 			);
