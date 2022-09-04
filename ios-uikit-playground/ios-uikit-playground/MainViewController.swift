@@ -45,11 +45,7 @@ class MainView: UIView {
         self.addSubview(likeButton)
     }
     
-    func setupConstraints() {
-        // for each view we build make sure to set this up
-        self.translatesAutoresizingMaskIntoConstraints = false
-        contentView.translatesAutoresizingMaskIntoConstraints = false
-        
+    fileprivate func setupContentViewConstraints() {
         // remeber to add isactive true else it wont show on the screen cos contraint is not active
         contentView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 10).isActive = true
         // assuming the negative so it does not get obstructed by the notch
@@ -57,11 +53,23 @@ class MainView: UIView {
         
         contentView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -10).isActive = true
         contentView.bottomAnchor.constraint(equalTo: self.centerYAnchor, constant: 0).isActive = true
-        
+    }
+    
+    fileprivate func setupLikeButtonConstraints() {
         //Like button
         likeButton.translatesAutoresizingMaskIntoConstraints = false
         likeButton.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 0).isActive = true
         likeButton.topAnchor.constraint(equalTo: contentView.bottomAnchor, constant: 10).isActive = true
+    }
+    
+    func setupConstraints() {
+        // for each view we build make sure to set this up
+        self.translatesAutoresizingMaskIntoConstraints = false
+        contentView.translatesAutoresizingMaskIntoConstraints = false
+        // content view contraints
+        setupContentViewConstraints()
+        //Like button
+        setupLikeButtonConstraints()
         
     }
     
