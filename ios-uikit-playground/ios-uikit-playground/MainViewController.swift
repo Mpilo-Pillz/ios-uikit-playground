@@ -10,12 +10,27 @@ import UIKit
 class MainViewController: UIViewController {
     
     var mainView: MainView { return self.view as! MainView}
+    // introduce state
+    var liked = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         mainView.likeAction = { [weak self ] in
             guard let strongSelf = self else { return }
-            strongSelf.mainView.contentView.backgroundColor = UIColor.red.withAlphaComponent(0.5)
+            strongSelf.liked = !strongSelf.liked
+            if strongSelf.liked {
+                UIView.animate(withDuration: 0.5, animations: {
+                    strongSelf.mainView.likeButton.setTitle("Dislike", for: .normal)
+                    strongSelf.mainView.contentView.backgroundColor = UIColor.red.withAlphaComponent(0.5)
+                })
+            } else {
+                UIView.animate(withDuration: 0.5, animations: {
+                    strongSelf.mainView.likeButton.setTitle("Like", for: .normal)
+                    strongSelf.mainView.contentView.backgroundColor = .clear
+                })
+            }
+            
+            
         }
         // Do any additional setup after loading the view.
     }
