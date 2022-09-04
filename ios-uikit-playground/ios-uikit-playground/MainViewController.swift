@@ -58,6 +58,11 @@ class MainView: UIView {
         contentView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -10).isActive = true
         contentView.bottomAnchor.constraint(equalTo: self.centerYAnchor, constant: 0).isActive = true
         
+        //Like button
+        likeButton.translatesAutoresizingMaskIntoConstraints = false
+        likeButton.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 0).isActive = true
+        likeButton.topAnchor.constraint(equalTo: contentView.bottomAnchor, constant: 10).isActive = true
+        
     }
     
     // create the first view
