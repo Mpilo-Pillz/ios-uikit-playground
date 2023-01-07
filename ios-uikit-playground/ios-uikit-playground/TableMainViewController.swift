@@ -12,7 +12,8 @@ class TableMainViewController: UIViewController {
     private let tableView: UITableView = {
         let tableView = UITableView()
         tableView.backgroundColor = .link
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+//        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(CustomTableViewCell.self, forCellReuseIdentifier: CustomTableViewCell.identifier)
         
         return tableView
     }()
@@ -37,8 +38,9 @@ extension TableMainViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = "Hello Pillz"
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: CustomTableViewCell.identifier, for: indexPath)
+//        cell.textLabel?.text = "Hello Pillz"
         return cell
     }
 }
