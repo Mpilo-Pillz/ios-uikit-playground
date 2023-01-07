@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C4218E122917EA3D0068BCCA /* GamesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4218E112917EA3D0068BCCA /* GamesTableViewController.swift */; };
 		C4218E142917EACF0068BCCA /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4218E132917EACF0068BCCA /* WelcomeViewController.swift */; };
+		C42FCFAC2969A1BF001FC55C /* TableMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42FCFAB2969A1BF001FC55C /* TableMainViewController.swift */; };
 		C494A32C28C48E96001635C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C494A32B28C48E96001635C1 /* AppDelegate.swift */; };
 		C494A33028C48E96001635C1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C494A32F28C48E96001635C1 /* MainViewController.swift */; };
 		C494A33628C48E96001635C1 /* ios_uikit_playground.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C494A33428C48E96001635C1 /* ios_uikit_playground.xcdatamodeld */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		C4218E112917EA3D0068BCCA /* GamesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesTableViewController.swift; sourceTree = "<group>"; };
 		C4218E132917EACF0068BCCA /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		C42FCFAB2969A1BF001FC55C /* TableMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableMainViewController.swift; sourceTree = "<group>"; };
 		C494A32828C48E96001635C1 /* ios-uikit-playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-uikit-playground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C494A32B28C48E96001635C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C494A32F28C48E96001635C1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				C494A33C28C48E99001635C1 /* Info.plist */,
 				C494A33428C48E96001635C1 /* ios_uikit_playground.xcdatamodeld */,
 				C4218E132917EACF0068BCCA /* WelcomeViewController.swift */,
+				C42FCFAB2969A1BF001FC55C /* TableMainViewController.swift */,
 			);
 			path = "ios-uikit-playground";
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				C494A32C28C48E96001635C1 /* AppDelegate.swift in Sources */,
 				C4218E142917EACF0068BCCA /* WelcomeViewController.swift in Sources */,
 				C4218E122917EA3D0068BCCA /* GamesTableViewController.swift in Sources */,
+				C42FCFAC2969A1BF001FC55C /* TableMainViewController.swift in Sources */,
 				C494A33628C48E96001635C1 /* ios_uikit_playground.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
